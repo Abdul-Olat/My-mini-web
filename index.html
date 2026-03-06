@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Awesome Mini Website</title>
+    <meta name="description" content="A beautiful mini-website built with love by @aaaa_bbbs"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./miniwebstylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MiniSite</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome @aaaa_bbbs 🎉</h1>
+            <p>Your fully functional mini-website is ready! Built with 💜 in Nigeria.</p>
+            <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">Get In Touch</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto; font-size:1.1rem;">
+            Hi! I'm <strong>@aaaa_bbbs</strong> from Nigeria 🇳🇬. This mini-website was coded instantly just for you. 
+            It works on phones, tablets, and laptops. Feel free to edit the text, colors, or add your own content!
+        </p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Clean, fast, and responsive websites built with modern tech.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful and user-friendly designs that people love.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Apps</h3>
+                <p>Cross-platform apps using React Native or Flutter.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formStatus" style="text-align:center; margin-top:1rem;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 <a href="https://x.com/aaaa_bbbs" target="_blank">@aaaa_bbbs</a> • Made with 💜 in Nigeria</p>
+    </footer>
+
+    <script src="./miniwebscript.js"></script>
+</body>
+</html>
